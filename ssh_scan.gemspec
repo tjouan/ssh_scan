@@ -1,11 +1,9 @@
 require 'ssh_scan/version'
-require 'date'
 
 Gem::Specification.new do |s|
   s.name = 'ssh_scan'
   s.version = SSHScan::VERSION
   s.authors = ["Jonathan Claudius", "Jinank Jain", "Harsh Vardhan", "Rishabh Saxena", "Ashish Gaurav"]
-  s.date = Date.today.to_s
   s.email = 'jclaudius@mozilla.com'
   s.platform = Gem::Platform::RUBY
   s.files = Dir.glob("lib/**/*") +
@@ -13,16 +11,9 @@ Gem::Specification.new do |s|
             Dir.glob("config/**/*") +
             Dir.glob("data/**/*") +
             Dir.glob("policies/**/*") +
-            [".gitignore",
-             ".rspec",
-             ".travis.yml",
-             "CONTRIBUTING.md",
-             "Gemfile",
-             "Rakefile",
-             "README.md",
-             "ssh_scan.gemspec"]
+            ["CONTRIBUTING.md",
+             "README.md"]
   s.license       = "ruby"
-  s.require_paths = ["lib"]
   s.executables   = s.files.grep(%r{^bin/[^\/]+$}) { |f| File.basename(f) }
   s.summary = 'Ruby-based SSH Scanner'
   s.description = 'A Ruby-based SSH scanner for configuration and policy scanning'
