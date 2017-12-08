@@ -1,4 +1,3 @@
-$: << "lib"
 require 'ssh_scan/version'
 require 'date'
 

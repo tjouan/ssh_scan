@@ -5,8 +5,6 @@ require 'rspec/core'
 require 'rspec/core/rake_task'
 require 'ssh_scan/version'
 
-$:.unshift File.join(File.dirname(__FILE__), "lib")
-
 require 'ssh_scan'
 
 task :default => :spec
