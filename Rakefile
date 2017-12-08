@@ -4,7 +4,6 @@ require 'rubygems/package_task'
 require 'rspec'
 require 'rspec/core'
 require 'rspec/core/rake_task'
-require 'bundler/setup'
 require 'ssh_scan/version'
 
 $:.unshift File.join(File.dirname(__FILE__), "lib")
